@@ -1,0 +1,42 @@
+.about-main{
+    background-image: url(../public/img/bg-about.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    @include center;
+    &-bg{
+        background-color: $background;
+    }
+    &-title{
+        padding-top: 25px;
+        text-decoration: underline;
+    }
+    &-title2{
+        padding-top: 20px;
+        text-decoration: underline;
+    }
+    &-description{
+        padding-bottom: 20px;
+    }
+    &-card{
+        background-color: $transparency;
+    }
+    &-img{
+        height: 250px;
+        width: 250px;
+        text-align: center;
+        border-radius: map-get($porcentajes, 70);
+    }
+    &-image{
+        width: map-get($porcentajes, 65);
+        height: 350px;
+        text-align: center;
+        border: 2px solid $gold;
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 992px){
+    
+    .about-main-image{
+            width: map-get($porcentajes, full);
+        }
+}

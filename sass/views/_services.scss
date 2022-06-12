@@ -1,0 +1,20 @@
+.serv-main{
+    background-image: url(../public/img/bg-services.jpg);
+    background-size: cover;
+    background-attachment: fixed; 
+    @include center;  
+    &-title{
+        padding-top: 30px;
+        text-decoration: underline;
+    }
+@for $i from 1 to 4 {
+    .img-#{$i} {
+        width:  map-get($porcentajes, full);
+        height:  map-get($porcentajes, 50);
+        background-color: $background;    
+    }
+    .card-#{$i} {
+        background-color: $background;    
+    }
+}    
+} 

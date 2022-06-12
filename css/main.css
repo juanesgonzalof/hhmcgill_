@@ -1,0 +1,228 @@
+/* VARIABLES */
+/** MAPS **/
+.pd-fix {
+  padding: 0px; }
+
+.pd-top-20 {
+  padding: 20px 0 0 0; }
+
+.pd-bot-20 {
+  padding: 0 0 20px 0; }
+
+/** MAP GET **/
+/* GLOBALES */
+.white {
+  color: white; }
+
+.text-left {
+  text-align: left;
+  padding-top: 0; }
+
+.fix-gutter {
+  --bs-gutter-x: 0; }
+
+.underline {
+  text-decoration: underline; }
+
+.margin {
+  margin: 0   5px 0   5px; }
+
+.bg-opacity {
+  background-color: rgba(0, 0, 0, 0.486); }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white; }
+
+body {
+  height: 100%; }
+
+/* PARTIALS */
+.logo {
+  padding: 0;
+  margin: 0;
+  height: 40px; }
+
+.footer {
+  color: white;
+  height: 45px;
+  padding: 0%;
+  margin: 0; }
+
+@media only screen and (max-width: 992px) {
+  .footer {
+    text-align: center; } }
+
+/* VIEWS */
+/** SE APLICA GRID **/
+.index-main {
+  background-image: url("../public/img/bg-index.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
+  .index-main-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "primeraCaja segundaCaja"; }
+  .index-main-title {
+    text-align: center;
+    text-decoration: underline;
+    padding: 30px  30px    40px    30px; }
+  .index-main-description {
+    text-align: center;
+    font-size: 20px;
+    padding: 0px  30px    25px    30px; }
+  .index-main-h2 {
+    text-align: center;
+    padding: 0px  30px  110.5px    30px;
+    font-size: 35px;
+    color: white; }
+    .index-main-h2 :hover {
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+      background-color: rgba(0, 0, 0, 0.486);
+      transition-duration: 1.5s; }
+  .index-main-link {
+    color: white;
+    text-decoration: none; }
+  .index-main-caja1 {
+    grid-area: primeraCaja; }
+  .index-main-bg, .index-main-caja2 {
+    background-color: rgba(0, 0, 0, 0.486); }
+  .index-main-caja2 {
+    padding-top: 50px;
+    grid-area: segundaCaja;
+    height: 100%; }
+
+@media only screen and (max-width: 925px) {
+  .index-main-principal {
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    grid-template-areas: "segundaCaja"; }
+  .index-main-caja1 {
+    display: none; }
+  .index-main-caja2 {
+    text-align: center; }
+  .index-main-title {
+    text-decoration: underline;
+    padding: 70px  0    40px    0px; }
+  .index-main-description {
+    margin: 0%  20% 0   20%; }
+  .index-main-h2 {
+    padding: 0px  30px  180px    30px;
+    font-size: 35px;
+    color: white; } }
+
+.ref-main {
+  background-image: url(../public/img/bg-ref.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  color: white; }
+  .ref-main-bg {
+    background-color: rgba(0, 0, 0, 0.486); }
+  .ref-main-title {
+    padding-top: 30px;
+    text-decoration: underline; }
+  .ref-main-img {
+    width: 600px;
+    height: 150px;
+    padding: 0   0   0px    0;
+    border: 2px solid #efff10;
+    border-radius: 30px;
+    margin-bottom: 40px; }
+
+.serv-main {
+  background-image: url(../public/img/bg-services.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  color: white; }
+  .serv-main-title {
+    padding-top: 30px;
+    text-decoration: underline; }
+  .serv-main .img-1 {
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.486); }
+  .serv-main .card-1 {
+    background-color: rgba(0, 0, 0, 0.486); }
+  .serv-main .img-2 {
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.486); }
+  .serv-main .card-2 {
+    background-color: rgba(0, 0, 0, 0.486); }
+  .serv-main .img-3 {
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.486); }
+  .serv-main .card-3 {
+    background-color: rgba(0, 0, 0, 0.486); }
+
+.contact-main {
+  background-image: url(../public/img/bg-contact-u.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
+  .contact-main-bg {
+    background-color: rgba(0, 0, 0, 0.486); }
+  .contact-main-box1 {
+    height: 100%;
+    padding: 19px 0 65px 80px;
+    text-align: center;
+    color: white; }
+  .contact-main-box-2 {
+    padding: 25px 0 65px 50px;
+    color: white; }
+  .contact-main-t {
+    padding: 15px 0  25px   10px;
+    color: white;
+    text-align: center; }
+  .contact-main-d {
+    font-size: 20px;
+    padding: 0px  30px    60px    30px;
+    color: white; }
+
+@media only screen and (max-width: 992px) {
+  .contact-main-box1 {
+    padding: 5px 10% 0 10%; }
+  .contact-main-box2 {
+    padding: 0ds 10% 22px 20%;
+    color: white; } }
+
+.about-main {
+  background-image: url(../public/img/bg-about.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  color: white; }
+  .about-main-bg {
+    background-color: rgba(0, 0, 0, 0.486); }
+  .about-main-title {
+    padding-top: 25px;
+    text-decoration: underline; }
+  .about-main-title2 {
+    padding-top: 20px;
+    text-decoration: underline; }
+  .about-main-description {
+    padding-bottom: 20px; }
+  .about-main-card {
+    background-color: rgba(0, 0, 0, 0); }
+  .about-main-img {
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    border-radius: 70%; }
+  .about-main-image {
+    width: 65%;
+    height: 350px;
+    text-align: center;
+    border: 2px solid #efff10;
+    margin-bottom: 50px; }
+
+@media only screen and (max-width: 992px) {
+  .about-main-image {
+    width: 100%; } }

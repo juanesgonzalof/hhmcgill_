@@ -1,0 +1,23 @@
+.white{
+    color: $secondary;
+}
+.text-left{
+    text-align: left;
+    padding-top: 0;
+}
+.fix-gutter{
+    --bs-gutter-x: 0;
+}
+@mixin center {
+    text-align: center;
+    color: $secondary;
+}
+.underline{
+    text-decoration: underline;
+}
+.margin{
+    margin: 0   5px 0   5px;
+}
+.bg-opacity{
+    background-color: $background;
+}

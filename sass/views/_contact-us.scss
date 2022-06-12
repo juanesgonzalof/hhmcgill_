@@ -1,0 +1,39 @@
+.contact-main{
+    background-image: url(../public/img/bg-contact-u.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+    &-bg{
+        background-color: $background;
+    }
+    &-box1{
+        height: 100%;
+        padding: 19px 0 65px 80px;
+        @include center;
+    }        
+    &-box-2{
+        padding: 25px 0 65px 50px;
+        color: $secondary;
+    }
+    &-t{
+        padding: 15px 0  25px   10px;
+        color: $secondary;
+        text-align: center;
+    }
+    &-d{
+        font-size: 20px;
+        padding: 0px  30px    60px    30px;
+        color: $secondary;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .contact-main{
+        &-box1{
+            padding: 5px 10% 0 10%;
+    }
+        &-box2{
+            padding: 0ds 10% 22px 20%;
+            color: $secondary;
+    }
+}
+}  

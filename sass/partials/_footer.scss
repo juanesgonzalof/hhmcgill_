@@ -1,0 +1,11 @@
+.footer{
+    color: $secondary;
+    height: 45px;
+    padding: 0%;
+    margin: 0;
+}
+@media only screen and (max-width: 992px){
+    .footer{
+        text-align: center;
+    }
+}
