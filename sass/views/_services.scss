@@ -2,10 +2,14 @@
     background-image: url(../public/img/bg-services.jpg);
     background-size: cover;
     background-attachment: fixed; 
+    list-style-type: none;
     @include center;  
     &-title{
         padding-top: 30px;
         text-decoration: underline;
+    }
+    &-list{
+        list-style-type: none;
     }
 @for $i from 1 to 4 {
     .img-#{$i} {
@@ -14,7 +18,7 @@
         background-color: $background;    
     }
     .card-#{$i} {
-        background-color: $background;    
+        background-color: $background;
     }
 }    
 } 

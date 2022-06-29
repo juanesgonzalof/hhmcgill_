@@ -7,15 +7,16 @@
         background-color: $background;
     }
     &-title{
-        padding-top: 25px;
+        padding-top: 5px;
         text-decoration: underline;
     }
     &-title2{
-        padding-top: 20px;
+        padding-top: 50px;
         text-decoration: underline;
     }
     &-description{
-        padding-bottom: 20px;
+        padding: 0   20px 20px   20px;
+
     }
     &-card{
         background-color: $transparency;
